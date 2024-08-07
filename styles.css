@@ -1,0 +1,139 @@
+/* Custom Styles */
+
+body {
+    font-family: Arial, sans-serif;
+}
+.bebas-neue-regular-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .hero {
+    background-color: rgb(231, 29, 125);
+    background-size: contain;
+    padding: 20px 0 0 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 500px; /* Specify the height you want */
+    object-fit: contain; /* Cover the element, preserving aspect ratio */
+    width: 100%;
+}
+
+.carousel-caption {
+    /* visibility: hidden; */
+    /* position: absolute; */
+    /* top: 100; */
+    /* left: 25%;  */
+
+    /* height: 100px; Match the image height */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 600px; */
+    /*background: rgba(0, 0, 0, 0.5);  Semi-transparent background for captions */
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /*Ensure padding is included in the element's total width and height*/
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* position: relative; */
+}
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+.card1{
+    height: 300px;
+}
+.card3{
+    object-position: 0 5%;
+    height: 350px;
+}
+.terka{
+    height: 500px;
+    object-position: 0 85px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.contact-info h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin-bottom: 10px;
+}
+.social-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e91e63;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+}
+.social-buttons a:hover {
+    background-color: #d81b60;
+}
+.social-buttons svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+
+footer {
+    background-color: rgb(231, 29, 125);
+    
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
