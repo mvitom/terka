@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+   
+
 </head>
 <body>
     <!-- Navigační lišta -->
@@ -34,7 +37,7 @@
 
     <header class="hero text-center">
         <div class="container">
-            <h1 class="display-4">Dosáhněte svých cílů</h1>
+            <h1 class="display-4">Budujte své silnější já</h1>
             <p class="lead">Individuální a skupinové tréninky přizpůsobené právě vám.</p>
         </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -61,8 +64,8 @@
                 <div class="carousel-item">
                     <img src="./photos/IMG_83.jpeg" class="d-block" alt="Image 3">
                     <div class="carousel-caption">
-                        <h5>Výživové poradenství</h5>
-                        <p>Zdravá strava na míru pro lepší výsledky.</p>
+                        <h5>Strava</h5>
+                        <p>Ukážu vám udržitelný zdravý přístup ke stravě.</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +86,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="bebas-neue-regular">O mně</h2>
-                    <p>Ahoj! Jsem Tereza Masopustová, certifikovaná osobní trenérka s vášní pro pomoc lidem dosahovat jejich fitness cílů. S odbornými znalostmi a letitou praxí nabízím personalizované tréninkové programy, které odpovídají vašim potřebám.</p>
+                    <p>Ahoj, jsem Terka, milovnice pohybu a jídla. Ptáš se jakého pohybu? Od turistiky, přes tanec,
+                        cyklistiku, pohybové hry až po fitness. Zkrátka od každého něco, protože všestrannost tě
+                        dovede nejdál. </p>
+                    <p>Jsem kondiční trenérka dětí a mládeže a osobní trenérka ve fitku. Ve světě trenérství se
+                        pohybuji od roku 2018, kdy jsem začala trénovat mažoretky – sport, se kterým jsem strávila
+                        celé dětství. Zodpovědnost za děti na tréninku mě přiměla zjistit si více, jak lidské tělo
+                        funguje. Udělala jsem si kurz na trenéra fitness, a kromě tance jsem začala trénovat také
+                        běžnou populaci. Stále jsem chtěla vědět více, a tak jsem došla až ke kondičním tréninkům
+                        dětí a mládeže. Snažím se jak dětem, tak dospělým ukázat, že sport by měl být součástí
+                        každého z nás.</p>    
                 </div>
                 <div class="col-lg-4">
                     <img src="./photos/terka2.PNG" alt="Tereza Masopustová" class="img-fluid h-70 terka">
@@ -94,90 +106,126 @@
 
      <!-- Služby -->
     
-    <section id="services" class="bg-light py-5">
+     <section id="services" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center bebas-neue-regular pb-2">Moje služby</h2>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
                     <div class="card mb-4">
-                        <img src="./photos/IMG_2797.jpeg" class="card-img-top card1" alt="Individuální trénink">
-                        <div class="card-body">
-                            <h5 class="card-title">Individuální trénink</h5>
-                            <p class="card-text">Osobní tréninkové lekce přizpůsobené vašim fitness cílům a úrovni.</p>
+                        <div class="card-img-container" onclick="openModal('modal1')">
+                            <img src="./photos/personaltrain.jpg" class="card-img-top card1" alt="Individuální trénink">
+                            <div class="card-body">
+                                <h5 class="card-title">Osobní tréninky</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col">
                     <div class="card mb-4">
-                        <img src="./photos/IMG_6769.jpeg" class="card-img-top card2" alt="Skupinové lekce">
-                        <div class="card-body">
-                            <h5 class="card-title">Skupinové lekce</h5>
-                            <p class="card-text">Připojte se k skupině podobně smýšlejících jednotlivců na zábavných a náročných cvičeních.</p>
+                        <div class="card-img-container" onclick="openModal('modal2')">
+                            <img src="./photos/detiamladez.jpg" class="card-img-top card2" alt="Kondiční tréninky">
+                            <div class="card-body">
+                                <h5 class="card-title">Kondiční tréninky dětí <br> a mládeže</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col">
                     <div class="card mb-4">
-                        <img src="./photos/food.jpg" class="card-img-top card3" alt="Výživové poradenství">
-                        <div class="card-body">
-                            <h5 class="card-title">Výživové poradenství</h5>
-                            <p class="card-text">Získejte personalizované výživové plány, které doplní váš trénink.</p>
+                        <div class="card-img-container" onclick="openModal('modal3')">
+                            <img src="./photos/skupina.jpg" class="card-img-top card3" alt="Výživové poradenství">
+                            <div class="card-body">
+                                <h5 class="card-title">Skupinové lekce Brušperk</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-img-container" onclick="openModal('modal4')">
+                            <img src="./terez.jpg" class="card-img-top card4" alt="Nová služba">
+                            <div class="card-body">
+                                <h5 class="card-title">Tréninkové plány</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-img-container" onclick="openModal('modal5')">
+                            <img src="./photos/ranni_balanc.jpg" class="card-img-top card5" alt="Výživové poradenství">
+                            <div class="card-body">
+                                <h5 class="card-title">Skupinové lekce Ostrava</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    
+    
 
     <!-- Moje kurzy -->
     
-    <section id="courses" class="bg-light py-5">
+    <section id="courses" class="bg-light">
         <div class="container">
             <h2 class="text-center bebas-neue-regular">Moje kurzy</h2>
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-group">
-                        <li class="list-group-item">Kurz: Výživový poradce - 2023</li>
-                        <li class="list-group-item">Kurz: Osobní trenér - 2022</li>
-                        <li class="list-group-item">Kurz: Funkční trénink a mobilita - 2021</li>
-                        <li class="list-group-item">Kurz: TRX a silový trénink - 2020</li>
-                        <li class="list-group-item">Kurz: Jóga a relaxační techniky - 2019</li>
+                        <li class="list-group-item">2024 Osobní trenérka ve fitness dětí a mládeže (3DFA)</li>
+                        <li class="list-group-item">2023 Mobilita a flexibilita (Training Hub)</li>
+                        <li class="list-group-item">2023 Základy periodizace a adaptace (Training Hub)</li>
+                        <li class="list-group-item">2023 Komplexní diagnostika pohybového aparátu (Core Training)</li>
+                        <li class="list-group-item">2022 Jumping instruktorka</li>
+                        <li class="list-group-item">2022 Dřep a silový trénink (Training Hub)</li>
+                        <li class="list-group-item">2020 Instruktorka fitness (Yoda Institut)</li>
+                        <li class="list-group-item">2018 Trenérka mažoretek licence B</li>
+                        
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-6" style="min-height:500px;">
-              <div class="position-relative h-100"><img src="image.jpeg" alt="website template image" class="position-absolute w-100 h-100" style="object-fit:cover;"></div>
+    
+
+    <section>
+        <div class="pricing-section">
+            <h2>CENÍK</h2>
+            <div class="pricing-item">
+                <h3>Osobní tréninky</h3>
+                <p class="price">750 Kč</p>
             </div>
-            <div class="col-lg-6 pt-5 pb-lg-5">
-              <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
-                <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
-                <h1 class="mb-4 bebas-neue-regular">Doraž si k nám zamakat!</h1>
-                <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                <ul class="list-inline">
-                  <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM - 7:00 PM</li>
-                  <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 9:00 AM - 6:00 PM</li>
-                  <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
-                </ul>
-                <!-- <a href="https://www.free-css.com/free-css-templates" class="btn btn-primary mt-2">Book Now</a></div> -->
+            <div class="pricing-item">
+                <h3>Kondiční tréninky dětí a mládeže</h3>
+                <p class="price">700 Kč</p>
             </div>
-          </div>
+            <div class="pricing-item">
+                <h3>Skupinové lekce</h3>
+                <p class="price">150 Kč <span class="note">(permanentka 10+1 vstup zdarma)</span></p>
+            </div>
+            <div class="pricing-item">
+                <h3>Tréninkový plán na 4–6 týdnů</h3>
+                <p class="price">900 Kč <span class="note">(spolupráce minimálně na 3 měsíce)</span></p>
+            </div>
+            <p class="note">V případě omluvení se méně než 24 hodin před začátkem tréninku je nutno <br> uhradit storno poplatek ve výši 100 %. </p>
         </div>
-      </div>
+
+    </section>
     <!-- Kontakt -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 contact-info">
                     <h3>Kontaktujte mě</h3>
-                    <p><strong>Location:</strong> Ostrava, Česká republika</p>
-                    <p><strong>Telefon:</strong> +420 123 456 789</p>
+                    <p><strong>Poloha:</strong> Ostrava, Česká republika </p>
+                    <p><strong>Telefon:</strong> +420 736 646 553 </p>
+                    <p><strong>email:</strong> masopustova.tereza@email.cz </p>
                 </div>
                 <div class="col-md-6 text-center">
                     <h3>Sledujte mě</h3>
@@ -199,6 +247,95 @@
         <p>&copy; 2024 Tereza Masopustová. Všechna práva vyhrazena.</p>
     </footer>
 
+    <!-- Modals -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h5>Osobní tréninky</h5>
+            <!-- <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                      <path fill="#2c3e50" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+                    </svg>
+                  </div>
+                <div class="divider-custom-line"></div>
+            </div> -->
+            <p class="modal-text">Osobní tréninky vedu v soukromém fitness v Ostravě, tedy v ideálním prostředí řešit vaše
+                zdraví a lásku ke sportu komplexně. S každým klientem pracuji individuálně. Začínám
+                kompletní diagnostikou pohybového aparátu, jejíž součástí je cílený rozhovor s dotazy na
+                Vaše předchozí zranění, na Vaše zaměstnání z hlediska pohybu (sedavé/statické/variabilní)
+                nebo na Vaše pohybové zlozvyky. Po vyšetření zaměřeném na detekci svalových dysbalancí,
+                sestavíme individuálně pro Vás tréninkový protokol, kde se budeme zabývat tím, co je
+                potřeba – záda, kolena, kyčle, střed těla…Následně můžeme plynule přejít k silovému
+                tréninku. Naučíme se základní pohybové vzorce a zjistíme, že silový trénink je základním
+                stavebním kamenem nejen každého sportovce, ale každého z nás.
+                Bez nastavení plánu a disciplíny to nejde! Když budeš každý den cvičit, jak se ti zachce,
+                k výsledkům to nepovede. Proto spolu sestavíme také tréninkový plán.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h5>Kondiční tréninky dětí <br> a mládeže</h5>
+            <p class="modal-text">Specializuji se na tréninkový rozvoj dětí od 4 do 18 let. Ať už je vaše dítě mladý profesionální
+                sportovec, který potřebuje systematický plán, nebo hledáte hravý trénink pro své dítě, ráda
+                se vašeho malého i velkého sportovce ujmu.
+                Součástí tréninku je diagnostika a testování, explozivita a plyometrie, nerozlučná trojka –
+                síla, rychlost a vytrvalost, gymnastika, koordinace a v neposlední řadě jde o trénink hrou.
+                Hlavními pilíři mých tréninků jsou všestrannost, pochvala a povzbuzení, pozitivní vztah k
+                míči, bezpečné prostředí, kreativita a individuální přístup.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <h5>Skupinové lekce Brušperk</h5>
+            <p class="modal-text">
+                Nic vás nenabije tolik jako síla týmu a společná motivace. Proto vedu také skupinové lekce
+                v Brušperku. Lekce jsou vhodné pro všechny, ať už jste začátečník nebo pokročilý. Připojte
+                se do přátelského kolektivu lidí se stejným cílem – hýbat se zdravě, zlepšit kondici, posunout
+                své limity a užít si pohyb!
+                <br> <span class="skup-lekce-time">Úterý 19:30-20:30 <br> Čtvrtek 18:30-19:30</span> <br>
+                <span class="center-text">Tělocvična ZŠ Brušperk, rezervace po tel. domluvě</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+            <h5>Tréninkové plány</h5>
+            <p class="modal-text">Ať už máme za sebou pár tréninků, nebo jste pokročilý fitnesák, chcete na sobě pracovat
+                efektivně a být každý týden blíže svým cílům, je tréninkový plán přímo pro vás. Program
+                sestavím dle vaší úrovně a možností na 4–6 týdnů. Uvidíte, že s nastaveným plánem a
+                disciplínou to půjde hned lépe!</p>
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+            <h5>Skupinové lekce Ostrava</h5>
+            <p class="modal-text">Lekce Ranní balanc je ideální pro každého, kdo chce rozhýbat tělo, posílit střed a přirozeně se hýbat bez bolesti. 
+                Lekce je zaměřená na mobilitu, stabilitu a hluboký stabilizační systém.
+                Lekce je vhodná jak pro začátečníky, tak pokročilé, a dvakrát tolik ji ocení ti, kdo tráví většinu dne sezením.</p>
+                <br> <span class="skup-lekce-time">Pátek 6:45 - 7:45</span> <br>
+                <span class="center-text">rezervace: <a href="https://balancfit.inrs.cz/rs/kalendar_vypis">BALANC FIT</a></span>
+        </div>
+    </div>
+    
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+        
+    </script>
     <!-- Bootstrap JS, Popper.js, a jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
