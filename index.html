@@ -58,7 +58,7 @@
                     <img src="./photos/IMG_82.jpeg" class="d-block" alt="Image 2">
                     <div class="carousel-caption">
                         <h5>Skupinové lekce</h5>
-                        <p>Trénujte ve skupině a bavte </br> se pohybem.</p>
+                        <p>Trénujte ve skupině a bavte se pohybem.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -81,7 +81,7 @@
     </header>
 
     <!-- O mně -->
-    <section id="about" class="pt-5">
+    <section id="about" class="pt-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -219,6 +219,56 @@
         </div>
 
     </section>
+
+        <!-- Reference klientů -->
+        <section id="references" class="py-5">
+            <div class="container">
+                <h2 class="text-center bebas-neue-regular pb-4">REFERENCE KLIENTŮ</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- Carousel for References -->
+                        <div id="referenceCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#referenceCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#referenceCarousel" data-slide-to="1"></li>
+                            </ol>
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <!-- Reference 1 -->
+                                <div class="carousel-item active">
+                                    <div class="reference-item">
+                                        <p class="reference-text">
+                                            K Terezce chodím cvičit už přes dva měsíce. Z počátku jsem se snažila vždy cvičit sama doma, ale nemělo to takové výsledky, jaké jsem očekávala. To se změnilo, když jsem byla u Terezky na první lekci. Nastavila mi cvičení na míru přesně podle mých potřeb a již po třech měsících se dostavují výsledky. Téměř jsem vyřešila problém se stresovou inkontinencí po třech porodech. Přestává mě zlobit levá kyčel a záda v běžném provozu 🙂 Načerpala jsem spoustu nových informací o cvičení, stravě a také jsem objevila spoustu svalů, o kterých jsem neměla ani tušení, že je mám a že by se měly cvičit 😃 Děkuji Terezko!
+                                        </p>
+                                        <p class="reference-author">- Zuzana H.</p>
+                                    </div>
+                                </div>
+                                <!-- Reference 2 -->
+                                <div class="carousel-item">
+                                    <div class="reference-item">
+                                        <p class="reference-text">
+                                            Když jsem po čtyřicítce chtěl začít něco dělat se svým zchátralým tělem, Terka mě perfektně uvedla do světa funkčního tréninku. Postupně mě naučila správně cvičit, motivovala mě ke zlepšování a pomohla mi pochopit také principy vyvážené stravy. Ze cvičení se stala zdravá závislost, už mě nebolí záda a zase nosím velikost košile jako na střední škole. Dnes už cvičím sám, ale na Terku se vždy mohu obrátit s prosbou o konzultaci a každý měsíc mi připraví nový tréninkový plán přesně podle mých potřeb.
+                                        </p>
+                                        <p class="reference-author">- Václav M.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <a class="carousel-control-prev" href="#referenceCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#referenceCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Kontakt -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -336,6 +386,12 @@
         function closeModal(modalId) {
             document.getElementById(modalId).style.display = "none";
         }
+        
+        // Customize the carousel interval (in milliseconds)
+        $('#referenceCarousel').carousel({
+            interval: 10000, // 5 seconds
+            pause: "hover" // Pause on hover
+        });
         
     </script>
     <!-- Bootstrap JS, Popper.js, a jQuery -->
